@@ -1,0 +1,78 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+.navbar-custom {
+    background-color: #333333;
+    border-bottom-color: #222222;
+}
+
+.navbar-custom a {
+    color: #CCC !important;
+}
+
+.navbar-custom a:hover,
+.navbar-custom a:visited {
+    color: #FAFAFA !important;;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    color: #FAFAFA;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.map-container {
+    position: relative;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #333;
+}
+
+footer a {
+    color: #3399FF;
+}
+
+footer a:hover {
+    color: #FAFAFA;
+}
+
+p.copyright {
+    margin: 0;
+    color: #CCCCCC;
+}
