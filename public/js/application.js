@@ -1,4 +1,29 @@
-$(document).ready(function(){
-	$('.dropdown-menu input, .dropdown-menu label').click(function(e) {
-        e.stopPropagation();
- }); });
+// AngularJS App
+var matchupApp = angular.module('bdApp', [
+    'ngRoute'
+]);
+
+// AngularJS Routes
+matchupApp.config(function($routeProvider) {
+    $routeProvider
+
+        .when('/', {
+            templateUrl : 'home.html',
+            controller  : 'MainController'
+        })
+
+        .when('/inicio', {
+            templateUrl : 'home.html',
+            controller  : 'MainController'
+        })
+
+        .when('/sobre', {
+            templateUrl : 'sobre.html',
+            controller  : 'AboutController'
+        })
+
+        .when('/estado', {
+            templateUrl : 'estado.html',
+            controller  : 'StateController'
+        })
+});
