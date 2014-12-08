@@ -1,12 +1,7 @@
 // AngularJS App
-<<<<<<< HEAD
-var matchupApp = angular.module('bdApp', [
+var app = angular.module('bdApp', [
     'ngRoute',
     'api'
-=======
-var app = angular.module('bdApp', [
-    'ngRoute'
->>>>>>> 55009624be3ad2c548082ae2a6271f70cefbfeef
 ]);
 
 // AngularJS Routes

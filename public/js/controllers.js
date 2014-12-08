@@ -7,11 +7,7 @@ app.controller('AboutController', function($scope) {
 
 });
 
-<<<<<<< HEAD
-matchupApp.controller('StateController', ['$api', function($api, $scope, $routeParams) {
-=======
-app.controller('StateController', function($scope, $routeParams) {
->>>>>>> 55009624be3ad2c548082ae2a6271f70cefbfeef
+app.controller('StateController', ['$api', function($api, $scope, $routeParams) {
 
     $scope.message = ($routeParams.id);
 
