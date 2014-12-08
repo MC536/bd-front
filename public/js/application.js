@@ -1,6 +1,7 @@
 // AngularJS App
 var matchupApp = angular.module('bdApp', [
-    'ngRoute'
+    'ngRoute',
+    'api'
 ]);
 
 // AngularJS Routes

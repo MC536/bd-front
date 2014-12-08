@@ -7,8 +7,13 @@ matchupApp.controller('AboutController', function($scope) {
 
 });
 
-matchupApp.controller('StateController', function($scope, $routeParams) {
+matchupApp.controller('StateController', ['$api', function($api, $scope, $routeParams) {
 
     $scope.message = ($routeParams.id);
 
-});
+    var res = $api.main.location({
+        id: $scope.message
+    })
+
+    console.log(res);
+}]);
