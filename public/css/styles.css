@@ -43,12 +43,71 @@ a:visited {
     padding-bottom: 50px;
     color: #666666;
     background-color: #FAFAFA;
-    background-size: cover;
 }
 
 .map-container {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.box-container {
+    padding: 50px;
+
+}
+
+.picker-box {
+    background: #EAEAEA;
+    padding: 5px 25px 30px 25px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.dl {
+    background: #EAEAEA;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.dl .state-name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+    min-height: 80px;
+}
+
+.dl .rate {
+    min-height: 50px;
+    position: relative;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e74c3c;
+
+    padding: 20px 15px 0;
+    color: #f1c40f;
+}
+
+.dl .rate .type {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.dl .descr {
+    color: #999;
+    padding: 5px 15px;
+    border-bottom: 1px solid #CCC;
+    text-align: center;
+}
+
+.dl .descr .value {
+    font-weight: 100;
 }
 
 /* Sobre */
@@ -57,13 +116,11 @@ a:visited {
     padding-bottom: 50px;
     color: #666666;
     background-color: #FAFAFA;
-    background-size: cover;
 }
 
-.map-hi {
-    position: relative;
-    padding-top: 25%;
-    padding-bottom: 25%;
+.about-container {
+    padding: 50px;
+
 }
 
 /* Home */
@@ -72,13 +129,6 @@ a:visited {
     padding-bottom: 50px;
     color: #666666;
     background-color: #FAFAFA;
-    background-size: cover;
-}
-
-.map-hey {
-    position: relative;
-    padding-top: 25%;
-    padding-bottom: 25%;
 }
 
 /* Footer */
