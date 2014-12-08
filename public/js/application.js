@@ -1,10 +1,10 @@
 // AngularJS App
-var matchupApp = angular.module('bdApp', [
+var app = angular.module('bdApp', [
     'ngRoute'
 ]);
 
 // AngularJS Routes
-matchupApp.config(function($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
@@ -28,7 +28,7 @@ matchupApp.config(function($routeProvider) {
         })
 });
 
-matchupApp.directive('tooltip', function(){
+app.directive('tooltip', function(){
     return {
         restrict: 'A',
         link: function(scope, element, attrs){

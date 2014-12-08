@@ -1,13 +1,13 @@
 // AngularJS Controllers
-matchupApp.controller('MainController', function($scope) {
+app.controller('MainController', function($scope) {
 
 });
 
-matchupApp.controller('AboutController', function($scope) {
+app.controller('AboutController', function($scope) {
 
 });
 
-matchupApp.controller('StateController', function($scope, $routeParams) {
+app.controller('StateController', function($scope, $routeParams) {
 
     $scope.message = ($routeParams.id);
 
