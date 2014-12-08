@@ -22,7 +22,7 @@ matchupApp.config(function($routeProvider) {
             controller  : 'AboutController'
         })
 
-        .when('/estado', {
+        .when('/estado/:id', {
             templateUrl : 'estado.html',
             controller  : 'StateController'
         })

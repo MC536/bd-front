@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <div class="map-container">
                     <ul id="map">
                         <li id="crs" estado="rs"><a href="#rs" id="rs" title="RS"><img src="img/null.gif" alt="RS" /></a></li>
@@ -45,9 +45,8 @@
                                 <h2>Escolha um estado:</h2>
                                 <div class="bs-docs-example">
                                     <select class="selectpicker btn-block btn-lg">
-                                        <option>Mustard</option>
-                                        <option>Ketchup</option>
-                                        <option>Relish</option>
+                                        <option disabled selected>Nenhum</option>
+                                        <option>Acre</option>
                                     </select>
                                 </div>
                             </div>
@@ -66,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="descr">
-                                    Taxa: <span class="value">1029310</span>
+                                    ID: <span class="value">{{message}}</span>
                                 </div>
                                 <div class="descr">
                                     Taxa: <span class="value">1029310</span>
