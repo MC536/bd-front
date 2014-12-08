@@ -1,11 +1,16 @@
 // AngularJS App
+<<<<<<< HEAD
 var matchupApp = angular.module('bdApp', [
     'ngRoute',
     'api'
+=======
+var app = angular.module('bdApp', [
+    'ngRoute'
+>>>>>>> 55009624be3ad2c548082ae2a6271f70cefbfeef
 ]);
 
 // AngularJS Routes
-matchupApp.config(function($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
@@ -29,7 +34,7 @@ matchupApp.config(function($routeProvider) {
         })
 });
 
-matchupApp.directive('tooltip', function(){
+app.directive('tooltip', function(){
     return {
         restrict: 'A',
         link: function(scope, element, attrs){
