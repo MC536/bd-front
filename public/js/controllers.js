@@ -21,3 +21,9 @@ app.controller('StateController', ['$api', '$scope', '$routeParams', function ($
             console.log(err);
         });
 }]);
+
+app.controller('SelectController', function ($scope) {
+    $scope.submit = function() {
+        window.location.href = "http://localhost:63342/bd-front/public/index.html#/estado/" + $scope.id;
+    };
+});
