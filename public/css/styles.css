@@ -50,11 +50,6 @@ a:visited {
     padding-bottom: 50px;
 }
 
-.box-container {
-    padding: 50px;
-
-}
-
 .picker-box {
     background: #EAEAEA;
     padding: 5px 25px 30px 25px;
@@ -63,6 +58,57 @@ a:visited {
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow:    0px 3px 0px 0px rgba(0, 0, 0, 0.25);
     box-shadow:         0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.box-container {
+    padding: 50px;
+
+}
+
+.dl-home {
+    background-color: #e74c3c;
+    color: #f1c40f;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow:    0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow:         0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dl-home .warning-msg {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+    min-height: 80px;
+}
+
+/* Sobre */
+.about {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    color: #666666;
+    background-color: #FAFAFA;
+}
+
+.about-container {
+    padding: 50px;
+    text-align: justify;
+}
+
+.about-container p {
+    font-weight: 100;
+}
+
+/* State */
+.state {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    color: #666666;
+    background-color: #FAFAFA;
 }
 
 
@@ -114,31 +160,6 @@ a:visited {
 
 .dl .descr .value {
     font-weight: 100;
-}
-
-/* Sobre */
-.about {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    color: #666666;
-    background-color: #FAFAFA;
-}
-
-.about-container {
-    padding: 50px;
-    text-align: justify;
-}
-
-.about-container p {
-    font-weight: 100;
-}
-
-/* State */
-.state {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    color: #666666;
-    background-color: #FAFAFA;
 }
 
 /* Footer */
