@@ -12,18 +12,25 @@ app.controller('StateController', ['$api', '$scope', '$routeParams', function ($
     $scope.message = ($routeParams.id);
 
     $api.main.location({
-        data: $routeParams.id
+        id: $routeParams.id
     })
         .success(function (response) {
+
+            var json = response[0];
+
+            $scope.name = json.location.name;
+
             console.log(response);
         })
         .error(function (err) {
-            console.log(err);
+            alert('Erro!')
         });
+
 }]);
 
 app.controller('SelectController', function ($scope) {
     $scope.submit = function() {
+
         window.location.href = "http://localhost:63342/bd-front/public/index.html#/estado/" + $scope.id;
     };
 });
