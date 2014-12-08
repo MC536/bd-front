@@ -1,19 +1,23 @@
 // AngularJS Controllers
-app.controller('MainController', function($scope) {
+app.controller('MainController', function ($scope) {
 
 });
 
-app.controller('AboutController', function($scope) {
+app.controller('AboutController', function ($scope) {
 
 });
 
-app.controller('StateController', ['$api', function($api, $scope, $routeParams) {
+app.controller('StateController', ['$api', '$scope', '$routeParams', function ($api, $scope, $routeParams) {
 
     $scope.message = ($routeParams.id);
 
-    var res = $api.main.location({
-        id: $routeParams.id
+    $api.main.location({
+        data: $routeParams.id
     })
-
-    console.log(res);
+        .success(function (response) {
+            console.log(response);
+        })
+        .error(function (err) {
+            console.log(err);
+        });
 }]);

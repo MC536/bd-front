@@ -45,7 +45,7 @@ app.directive('tooltip', function(){
 
 app.service('$api', ['$req', function($req) {
 
-    var BASE_URL = "http://ec2-54-94-143-249.sa-east-1.compute.amazonaws.com:9000/";
+    var BASE_URL = "http://192.168.0.110:9000";
 
     // API call wrapper
     var wrapper = function(action, fn) {
@@ -57,7 +57,7 @@ app.service('$api', ['$req', function($req) {
 
     // User public interface
     this.main = {
-        'location': wrapper('location/detail', $req.post)
+        'location': wrapper('/main', $req.post)
     };
 
 }]);
