@@ -1,7 +1,6 @@
 "use strict";
 
-angular.module('api')
-		.service('$api', ['$req', function($req) {
+app.service('$api', ['$req', function($req) {
 
 			var BASE_URL = "http://ec2-54-94-143-249.sa-east-1.compute.amazonaws.com:9000/";
 
@@ -18,9 +17,9 @@ angular.module('api')
 				'location': wrapper('location/detail', $req.post)
 			};
 
-		}])
+		}]);
 
-		.service('$req', ['$http', function($http) {
+		app.service('$req', ['$http', function($http) {
 
 			// Get request
 			this.get = function(a, d) {

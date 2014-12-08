@@ -12,7 +12,7 @@ app.controller('StateController', ['$api', function($api, $scope, $routeParams) 
     $scope.message = ($routeParams.id);
 
     var res = $api.main.location({
-        id: $scope.message
+        id: $routeParams.id
     })
 
     console.log(res);
