@@ -1,5 +1,5 @@
-$(document).ready(function(){
-	$('.dropdown-menu input, .dropdown-menu label').click(function(e) {
+jQuery(document).ready(function(){
+    jQuery('.dropdown-menu input, .dropdown-menu label').click(function(e) {
         e.stopPropagation();
  }); });
 
