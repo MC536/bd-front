@@ -45,7 +45,8 @@ app.directive('tooltip', function(){
 
 app.service('$api', ['$req', function($req) {
 
-    var BASE_URL = "http://192.168.0.110:9000";
+    // var BASE_URL = "localhost:9000";
+    var BASE_URL = "http://192.168.0.102:9000";
 
     // API call wrapper
     var wrapper = function(action, fn) {

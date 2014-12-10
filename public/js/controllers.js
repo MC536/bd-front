@@ -9,7 +9,7 @@ app.controller('AboutController', function ($scope) {
 
 app.controller('StateController', ['$api', '$scope', '$routeParams', function ($api, $scope, $routeParams) {
 
-    $scope.message = ($routeParams.id);
+    $scope.id = ($routeParams.id);
 
     $api.main.location({
         id: $routeParams.id
