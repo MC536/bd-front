@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-6 hidden-xs">
                 <div class="map-container">
-                    <ul id="map">
+                    <ul id="map" class="animated pulse">
                         <li id="crs" estado="rs"><a href="#estado/20" id="rs" title="Rio Grande do Sul" tooltip><img src="img/null.gif" alt="RS" /></a></li>
                         <li id="csc" estado="sc"><a href="#estado/23" id="sc" title="Santa Catarina" tooltip><img src="img/null.gif" alt="SC" /></a></li>
                         <li id="cpr" estado="pr"><a href="#estado/15" id="pr" title="Paraná" tooltip><img src="img/null.gif" alt="PR" /></a></li>
@@ -41,7 +41,7 @@
                 <div class="box-container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="dl-home">
+                            <div class="dl-home animated zoomIn">
                                 <div class="warning-msg">
                                     <h2>
                                         Nenhum estado escolhido!
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <div class="picker-box">
+                            <div class="picker-box animated zoomIn">
                                 <h2>Escolha um estado:</h2>
                                 <div class="bs-docs-example">
                                     <form ng-submit="submit()" ng-controller="SelectController">
