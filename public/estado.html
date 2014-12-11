@@ -83,12 +83,15 @@
                                     Risco de Contaminação
                                 </div>
                                 <div class="disease">
-                                    <div class="box">
+                                    <div class="box" ng-repeat="disease in diseases">
                                         <div class="disease-title">
-                                            Malária
+                                            {{disease.diseaseName}}
                                         </div>
                                         <div class="descr">
-                                            Vetor: <span class="value">Mosquito Prego</span>
+                                            Vetor: <span class="value">{{disease.vectorName}}</span>
+                                        </div>
+                                        <div class="descr">
+                                            Número de Incidências: <span class="value">{{disease.value}}</span>
                                         </div>
                                         <div class="disease-risk">
                                             Alto

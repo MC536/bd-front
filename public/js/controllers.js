@@ -7,9 +7,23 @@ app.controller('AboutController', function ($scope) {
 
 });
 
-app.controller('StateController', ['$api', '$scope', '$routeParams', function ($api, $scope, $routeParams) {
+app.controller('StateController', ['$api', '$http', '$scope', '$routeParams', function ($api, $http, $scope, $routeParams) {
 
     $scope.id = ($routeParams.id);
+
+    var baseUrl = 'http://social.devnup.com/twitter/search?';
+    var query = 'query=dengue'
+    var token = '&token=2403743390-bk2nEnyPK4auCQgQB7tNawicsgR3RcmTyTq3o9d&secret=KEEJjAIZ9FIfGr48fuJxOkhSbYoY6ZxPqJhifZKrdw3R8';
+
+    var endpoint = baseUrl+query+token;
+
+    $http.get(endpoint).
+        success(function(data, status, headers, config) {
+            console.log(data);
+        }).
+        error(function(data, status, headers, config) {
+            console.log(data);
+        });
 
     $api.main.location({
         id: $routeParams.id
@@ -20,6 +34,7 @@ app.controller('StateController', ['$api', '$scope', '$routeParams', function ($
 
             $scope.location = json.location;
             $scope.weather = json.weather;
+            $scope.diseases = json.incidences;
 
             console.log(response);
         })
