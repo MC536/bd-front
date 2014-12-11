@@ -31,9 +31,8 @@ app.controller('StateController', ['$api', '$http', '$scope', '$routeParams', fu
                             $scope.diseases = json.incidences;
                             $scope.twitter = json.twittter;
 
-                            $this.twitter
+                            jQuery('.state-' + $scope.location.id ).addClass('selected-state-' + $scope.location.id);
 
-                            console.log($scope.twitter);
                         })
                         .error(function (err) {
                             alert('Erro na requisição. Tente novamente.')
