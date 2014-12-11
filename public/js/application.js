@@ -45,20 +45,20 @@ app.directive('tooltip', function(){
 
 app.service('$api', ['$req', function($req) {
 
+    //Base URL
+    var BASE_URL = 'http://192.168.0.102:9000';
+
     // API call wrapper
     var wrapper = function(action, fn) {
 
         return function(data) {
-            return fn.call(fn, action, data);
+            return fn.call(fn, BASE_URL + action, data);
         }
     };
 
-    var token = '2403743390-bk2nEnyPK4auCQgQB7tNawicsgR3RcmTyTq3o9d&secret=KEEJjAIZ9FIfGr48fuJxOkhSbYoY6ZxPqJhifZKrdw3R8';
-
     // User public interface
     this.main = {
-        'location': wrapper('http://192.168.0.102:9000/main', $req.post),
-        'twitter': wrapper('social.devnup.com/twitter/search?query=dengue&token='+token, $req.get)
+        'location': wrapper('/main', $req.post)
     };
 
 }]);

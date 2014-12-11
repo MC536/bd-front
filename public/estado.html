@@ -93,15 +93,21 @@
                                         <div class="descr">
                                             Número de Incidências: <span class="value">{{disease.value}}</span>
                                         </div>
-                                        <div class="disease-risk">
-                                            Alto
+                                        <div class="twitter">
+                                            <span class="icon>
+                                                <i class="fa fa-twitter"></i>
+                                            </span>
+                                            No Twitter: <span class="value">{{disease.twitter}}</span>
+                                        </div>
+                                        <div class="disease-risk" ng-class="{'risk-green' : disease.riskValue >= 0, 'risk-yellow': disease.riskValue > 0.3, 'risk-red': disease.riskValue > 0.7}">
+                                            {{disease.risk}} / {{disease.riskValue}}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <div class="picker-box animated zoomIn">
+                            <div class="picker-box">
                                 <h2>Escolha outro estado:</h2>
                                 <div class="bs-docs-example">
                                     <form ng-submit="submit()" ng-controller="SelectController">
