@@ -200,9 +200,15 @@ a:visited {
 .dl .tab {
     display: inline-block;
     position: relative;
-    width: 32.7%;
+    width: 32.8%;
     text-align: center;
     padding: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .dl .tab{
+        width: 32.7%;
+    }
 }
 
 .dl .tab .icon {
