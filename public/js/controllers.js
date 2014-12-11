@@ -18,7 +18,8 @@ app.controller('StateController', ['$api', '$scope', '$routeParams', function ($
 
             var json = response[0];
 
-            $scope.name = json.location.name;
+            $scope.location = json.location;
+            $scope.weather = json.weather;
 
             console.log(response);
         })

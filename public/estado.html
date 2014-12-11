@@ -44,23 +44,46 @@
                             <div class="dl">
                                 <div class="state-name">
                                     <h2>
-                                        {{name}}
+                                        {{location.name}}
                                     </h2>
                                 </div>
-                                <div class="rate">
-                                    {{value}}{{id}} <!-- Remover ID -->
-                                    <div class="type">
-                                        Risco
+                                <div class="weather">
+                                    <div class="tab humidity">
+                                        <div class="icon">
+                                            <i class="fa fa-tint"></i>
+                                        </div>
+                                        <div class="label">Umidade Atual:</div>
+                                        <div class="number">{{weather.humidity}}<small>&nbsp;%</small></div>
+                                    </div>
+                                    <div class="tab temperature">
+                                        <div class="icon">
+                                            <i class="fa fa-sun-o"></i>
+                                        </div>
+                                        <div class="label">Temperatura Atual:</div>
+                                        <div class="number">{{weather.temp}}<small>&nbsp;ºC</small></div>
+                                    </div>
+                                    <div class="tab windspeed">
+                                        <div class="icon">
+                                            <i class="fa fa-cloud"></i>
+                                        </div>
+                                        <div class="label">Velocidade do Vento:</div>
+                                        <div class="number">{{weather.windSpeed}}<small>&nbsp;km/h</small></div>
                                     </div>
                                 </div>
                                 <div class="descr">
-                                    ID: <span class="value">{{id}}</span>
+                                    ID: <span class="value">{{location.id}}</span>
                                 </div>
                                 <div class="descr">
-                                    Taxa: <span class="value">1029310</span>
+                                    População: <span class="value">{{location.population}}</span>
                                 </div>
                                 <div class="descr">
-                                    Taxa: <span class="value">1029310</span>
+                                    Clima: <span class="value">{{location.climate.name}}</span>
+                                </div>
+                                <div class="rate">
+                                    {{id}} <!-- Remover ID -->
+                                    <div class="type">
+                                        Risco
+                                    </div>
                                 </div>
                             </div>
                         </div>
